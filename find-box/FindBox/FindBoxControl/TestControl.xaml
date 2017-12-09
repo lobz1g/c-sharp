@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="FindBox.MyControl.TestControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <TextBox x:Name="searchWord" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" VerticalContentAlignment="Center" TextChanged="searchWord_TextChanged"/>
+        <CheckBox x:Name="reg" Content="Учитывать регистр" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" Height="18" Width="148"/>
+        <CheckBox x:Name="word" Content="Только целые слова" HorizontalAlignment="Left" Margin="153,26,0,0" VerticalAlignment="Top" Height="18" Width="137"/>
+        <RichTextBox x:Name="mainTextBox" Margin="0,49,0,0" TextChanged="RichTextBox_TextChanged">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</UserControl>
